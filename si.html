@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🤧</title>
+  <meta name="theme-color" content="#FFA500">
+  <style>
+    body {
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff7f50;
+      font-size: 36px;
+    }
+
+    p {
+      color: #696969;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 40px;
+      border-radius: 5%;
+    }
+
+    video {
+      max-width: 100%;
+      margin-top: 40px;
+      
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .button {
+      background-color: #ff7f50;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background-color: #ff6347;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>¡Grosera!😒</h1>
+    <div class="center">
+        <button id="playPauseBtn" role="button">▶️</button>
+      </div>
+    <img src="DC_files/90d2a025b1e962f62b679389011a4f71.gif" alt="Celebration GIF">
+    <video loop autoplay muted>
+      <source src="DC_files/v.mp4" type="video/mp4">
+      Not video.
+    </video>
+    <button class="button" onclick="irAInicio()">Desbloqueame</button>
+  </div>
+
+  <script>
+    function irAInicio() {
+      window.location.href = 'https://wa.me/573012644657';
+    }
+    
+    const playPauseBtn2 = document.getElementById('playPauseBtn');
+const audio = new Audio('DC_files/clocks.mp3');
+
+// Agregar evento de clic al botón
+playPauseBtn2.addEventListener('click', function() {
+  // Si el audio está pausado, reproducirlo y cambiar el botón a pausa
+  if (audio.paused) {
+    audio.play();
+    playPauseBtn2.textContent = '⏸️';
+  } else { // Si el audio está reproduciéndose, pausarlo y cambiar el botón a reproducir
+    audio.pause();
+    playPauseBtn2.textContent = '▶️';
+  }
+});
+  </script>
+</body>
+</html>
